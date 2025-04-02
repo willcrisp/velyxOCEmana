@@ -41,6 +41,7 @@
 </template>
 
 <script setup>
+// Skibidi
 import { ref, computed } from "vue";
 import FrogImage from './assets/Frog.png';
 
