@@ -16,6 +16,9 @@
           </div>
         </v-col>
       </v-row>
+      <div class="d-flex justify-center mb-4">
+        <img :src="FrogImage" alt="Frog" class="dialog-frog">
+      </div>
       <div class="pixel-text conduit-text text-center">I am a conduit for nonsense</div>
 
       <v-btn @click="confirmReset" color="red" class="reset-button pixel-border">Reset</v-btn>
@@ -39,6 +42,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import FrogImage from './assets/Frog.png';
 
 const counters = ref([0, 0, 0]);
 const dialog = ref(false);
@@ -76,10 +80,6 @@ body,
 }
 
 .content-container {
-  background-image: url("/Frog%203.png"), url("/Helga%20text.png");
-  background-size: 50%, 30%;
-  background-position: center left, top left;
-  background-repeat: no-repeat, no-repeat;
   padding: 20px;
   min-height: 100vh;
   position: relative;
@@ -207,5 +207,11 @@ body,
   background-color: red;
   color: white;
   display: block;
+}
+
+.dialog-frog {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
 }
 </style>
