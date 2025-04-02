@@ -1,0 +1,21 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --green-bar: #00ff00;
+  --white-bar: #ffffff;
+  --blue-bar: #5a9bd5;
+  --bg-dark: #2d2d2d;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
